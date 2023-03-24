@@ -1,5 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+#messages
+{
+background-color:greenyellow;
+font-size:4;
+font-weight:bold;
+line-height:140%;
+}
+#status
+{
+background-color:red;
+font-size:4;
+font-weight:bold;
+color:white;
+line-height:140%;
+text-indent: 1em;
+}
 
-<html>
+
+</style>
 <head>
     <title>Poljabi Location & Weather Services</title>
 	<meta charset=utf-8 />
@@ -248,6 +268,7 @@
 	}
 
 	var marker, circle;
+
 	function generateTemp() {
 		var pos = 25,
 		  neg = 30,
@@ -261,7 +282,8 @@
 
 		return result;
 		}
-		function getPosition(position) {
+
+	function getPosition(position) {
 		console.log(position);
 		var lat = position.coords.latitude;
 		var lng = position.coords.longitude;
